@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object Prototype</title>
+</head>
+<body>
+
+    <div id="task1">
+        <h2>Task 1: Product Object</h2>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName">
+        <br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity">
+        <br><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price">
+        <br><br>
+        <button onclick="createProduct()">Create Product</button>
+        <br><br>
+        <div id="productDetails"></div>
+        <br>
+    </div>
+
+    <div id="task2">
+        <h2>Task 2: Book Object</h2>
+        <p>Enter Book Details</p>
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName"><br>
+        <p>Author Name</p>
+        <label for="authorFName">Fist Name:</label>
+        <input type="text" id="authorFName" placeholder="First Name"><br><br>
+        <label for="authorLName">Last Name:</label>
+        <input type="text" id="authorLName" placeholder="Last Name"><br><br>
+        <button onclick="createBook()">Create Book</button>
+        <div id="bookDetails"></div>
+        <br>
+    </div>
+
+    <div id="task3">
+        <h2>Task 3: Manager Object (Child of Employee)</h2>
+        <p>Enter Manager Details:</p>
+        <label for="managerName">Manager Name:</label>
+        <input type="text" id="managerName"><br><br>
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch"><br><br>
+        <button onclick="createPropertyManager()">Create Manager</button>
+        <div id="managerDetails"></div>
+        <div id="employeeDetails"></div>
+    </div>
+
+    <script src="Task3.js" defer></script>
+
+</body>
+</html>

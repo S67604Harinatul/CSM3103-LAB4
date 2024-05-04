@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Manager Examples</title>
+</head>
+<body>
+
+  <h1>Task 1: Paragraph Color Change on Events</h1>
+  <p id="eventParagraph">Click Me!</p>
+
+  <script>
+    var paragraph = document.getElementById("eventParagraph");
+
+    // Event listeners for paragraph (same as before)
+    paragraph.addEventListener("click", function() {
+      this.style.backgroundColor = "yellow";
+    });
+
+    paragraph.addEventListener("dblclick", function() {
+      this.style.backgroundColor = "blue";
+    });
+
+    paragraph.addEventListener("mouseover", function() {
+      this.style.backgroundColor = "red";
+    });
+
+    paragraph.addEventListener("mouseout", function() {
+      this.style.backgroundColor = "green";
+    });
+  </script>
+
+  <h1>Task 2: Text Field Events</h1>
+  <input type="text" id="textField" placeholder="Enter text here">
+
+  <script>
+    var textField = document.getElementById("textField");
+
+    // Event listeners for text field
+    textField.addEventListener("change", function() {
+      this.style.color = "blue"; // Change text color to blue on change
+      console.log("Text field content changed:", this.value);
+    });
+
+    textField.addEventListener("focus", function() {
+      this.style.color = "black"; // Set text color to black on focus
+      console.log("Text field gained focus");
+    });
+
+    textField.addEventListener("blur", function() {
+      this.style.color = ""; // Remove any color style on blur
+      console.log("Text field lost focus");
+    });
+  </script>
+
+</body>
+</html>
